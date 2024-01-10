@@ -39,7 +39,20 @@ class StockMarketAnalysis:
     
     def __init__(self, name, symbols, start, end):
         """
-        Initialize the StockMarketAnalysis class with data from a CSV file.
+        Initialize the StockMarketAnalysis class with data from Yahoo Finance.
+
+        Args:
+        - name (str): Name of the stock market analysis instance.
+        - symbols (str or list of str): Ticker symbol(s) for the desired stocks.
+        - start (str): Start date for fetching stock market data in "YYYY-MM-DD" format.
+        - end (str): End date for fetching stock market data in "YYYY-MM-DD" format.
+        
+        The constructor initializes the StockMarketAnalysis object with specified name and retrieves stock market data
+        using Yahoo Finance API based on the provided symbols, start, and end dates.
+        The 'symbols' argument can be a single ticker symbol (str) or a list of ticker symbols.
+        The retrieved data is stored in a Pandas DataFrame where the index represents the date.
+        Additionally, a 'Weekday' column is created by extracting the weekday name from the 'Date' index column.
+        The 'Date' column is removed as it's redundant with the index.
         """
         self.name = name
         self.data = yf.download(symbols, start = start, end = end)
