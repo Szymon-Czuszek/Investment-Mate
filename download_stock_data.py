@@ -64,6 +64,14 @@ class StockMarketAnalysis:
     def calculate_median_spread(self):
         """
         Calculate the median spread between high and low prices.
+
+        Returns:
+        - float: The calculated median spread between high and low prices, rounded to two decimal places.
+        
+        This method computes the median spread between the high and low prices within the stored stock market data.
+        It calculates the median of the 'High' and 'Low' columns separately,
+        then finds the spread by subtracting the low median from the high median.
+        The resulting median spread is rounded to two decimal places and returned.
         """
         high_median = np.median(self.data["High"])
         low_median = np.median(self.data["Low"])
