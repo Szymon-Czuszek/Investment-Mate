@@ -81,6 +81,13 @@ class StockMarketAnalysis:
     def calculate_open_std(self):
         """
         Calculate the standard deviation of open prices.
+
+        Returns:
+        - float: The calculated standard deviation of open prices, rounded to two decimal places.
+        
+        This method computes the standard deviation of the 'Open' prices within the stored stock market data.
+        It utilizes NumPy's std function on the 'Open' column, and the resulting standard deviation
+        is rounded to two decimal places before being returned.
         """
         open_std = np.std(self.data["Open"])
         return round(open_std, 2)
