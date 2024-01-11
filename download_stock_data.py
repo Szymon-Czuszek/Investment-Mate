@@ -120,6 +120,17 @@ class StockMarketAnalysis:
     def plot_candlestick_chart(self, ax = None):
         """
         Plot a candlestick chart.
+
+        Args:
+        - ax (matplotlib.axes._subplots.AxesSubplot, optional): Matplotlib AxesSubplot to plot on.
+          If not provided, a new subplot is created.
+
+        This method generates a candlestick chart based on the 'Open', 'Close', 'High', and 'Low' prices
+        stored in the class's data. Upward price movements are represented in green,
+        downward movements in red. The width of each candlestick bar and shadow width are adjustable.
+        Y-axis labels are formatted using the 'format_y_labels' method.
+        The resulting chart is titled "Candlestick Chart" and includes grid lines.
+        X-axis tick labels are rotated for better visibility.
         """
         if ax is None:
             fig, ax = plt.subplots(figsize = (10, 5))
