@@ -95,6 +95,19 @@ class StockMarketAnalysis:
     def format_y_labels(self, value, pos):
         """
         Format y-axis labels for thousands, millions, and billions.
+
+        Args:
+        - value (float): The numeric value of the y-axis label.
+        - pos (int): The position of the label.
+
+        Returns:
+        - str: The formatted y-axis label.
+        
+        This method formats y-axis labels based on their magnitude.
+        If the value is in billions, it returns the value formatted as 'X.XXB'.
+        If the value is in millions, it returns the value formatted as 'X.XXM'.
+        If the value is in thousands, it returns the value formatted as 'X.XXK'.
+        For values less than 1,000, it returns the value as a string without formatting.
         """
         if value >= 1e9:
             return f"{value / 1e9:.2f}B"
