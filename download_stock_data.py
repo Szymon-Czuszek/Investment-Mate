@@ -358,6 +358,17 @@ class StockMarketAnalysis:
     def plot_volume_distribution(self, ax = None):
         """
         Plot the distribution of trading volume per weekday.
+
+        Args:
+        - ax (matplotlib.axes._subplots.AxesSubplot, optional): Matplotlib AxesSubplot to plot on.
+          If not provided, a new subplot is created.
+
+        This method generates a bar plot showing the distribution of trading volume for each weekday.
+        Weekdays are ordered from Monday to Friday.
+        The y-axis labels are formatted using the 'format_y_labels' method.
+        The resulting chart is titled "Volume Distribution per Weekday" and includes grid lines.
+        X-axis tick labels are not rotated.
+        White lines are added between grid lines for better visibility.
         """
         if ax is None:
             fig, ax = plt.subplots(figsize = (10, 5))
