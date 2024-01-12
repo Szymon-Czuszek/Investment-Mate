@@ -409,8 +409,24 @@ class StockMarketAnalysis:
     def plot_combined_graph(self, plot_type = "both"):
         """
         Plot a combination of candlestick, close price, and volume graphs.
+
+        Args:
+        - plot_type (str, optional): Type of graphs to include. Options are "candlestick", "close_price",
+          "candlestick_vs_volume", "volume_distribution", or "both". Default is "both".
+
+        This method generates a combination of candlestick, close price evolution, and volume distribution graphs
+        arranged in a 2x2 grid of subplots.
+        The `plot_type` parameter allows specifying which types of graphs to include:
+        - "candlestick": Candlestick chart showing price movements.
+        - "close_price": Evolution of close prices with shaded price range.
+        - "candlestick_vs_volume": Candlestick chart with a volume bar chart on a secondary y-axis.
+        - "volume_distribution": Distribution of trading volume per weekday.
+        - "both": Include all four types of graphs.
+
+        Y-axis labels for Close Price Evolution and Volume Distribution are placed on the right side.
+        The major title provides an overall analysis context with the instance's name.
+        The layout is adjusted with a wider gap between the left and right side charts for better readability.
         """
-        
         # Creating a 2x2 grid of subplots
         fig, axs = plt.subplots(2, 2, figsize = (14, 10))
 
