@@ -301,6 +301,16 @@ class StockMarketAnalysis:
     def plot_close_price_evolution(self, ax = None):
         """
         Plot the evolution of close prices with shaded price range.
+
+        Args:
+        - ax (matplotlib.axes._subplots.AxesSubplot, optional): Matplotlib AxesSubplot to plot on.
+          If not provided, a new subplot is created.
+
+        This method generates a plot showing the evolution of close prices with a shaded range
+        between high and low prices. Close prices are represented in purple, and the range is shaded in pink.
+        The y-axis labels are formatted using the 'format_y_labels' method.
+        The resulting chart is titled "Close Price Evolution" and includes grid lines.
+        X-axis tick labels are rotated for better visibility.
         """
         if ax is None:
             fig, ax = plt.subplots(figsize = (10, 5))
