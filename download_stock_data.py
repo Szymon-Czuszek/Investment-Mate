@@ -36,7 +36,28 @@ from datetime import datetime, date  # Add this line
 
 # Building the StockMarketAnalysis Class
 class StockMarketAnalysis:
-    
+    """
+    Perform analysis on stock market data including candlestick charts, close price evolution,
+    volume distribution, and combined graphs.
+
+    Attributes:
+    - name (str): Name or identifier for the stock market analysis.
+    - data (pd.DataFrame): DataFrame containing stock market data with columns:
+      ['Date', 'Open', 'High', 'Low', 'Close', 'Volume', 'Weekday'].
+
+    Methods:
+    - __init__(self, name, symbols, start, end): Initialize the StockMarketAnalysis class with data
+      downloaded from Yahoo Finance.
+    - calculate_median_spread(self): Calculate the median spread between high and low prices.
+    - calculate_open_std(self): Calculate the standard deviation of open prices.
+    - format_y_labels(self, value, pos): Format y-axis labels for thousands, millions, and billions.
+    - plot_candlestick_chart(self, ax=None): Plot a candlestick chart.
+    - plot_candlestick_chart_vs_volume(self, ax=None): Plot a candlestick chart with a volume bar chart on a secondary y-axis.
+    - calculate_median_spread(self): Calculate the median spread between high and low prices.
+    - plot_close_price_evolution(self, ax=None): Plot the evolution of close prices with shaded price range.
+    - plot_volume_distribution(self, ax=None): Plot the distribution of trading volume per weekday.
+    - plot_combined_graph(self, plot_type="both"): Plot a combination of candlestick, close price, and volume graphs.
+    """
     def __init__(self, name, symbols, start, end):
         """
         Initialize the StockMarketAnalysis class with data from Yahoo Finance.
