@@ -517,6 +517,18 @@ class FinancialInstrumentsModule(tk.Frame):
         self.create_widgets()
         
     def load_symbols_from_file(self, file_path):
+        """
+        Load symbols from an Excel file and populate the 'symbols' attribute.
+
+        Args:
+        - file_path (str): The path to the Excel file containing symbols.
+
+        This method attempts to load symbols from the 'Symbols' sheet of an Excel file located at the specified 'file_path'.
+        The loaded symbols are assumed to be in a column named 'symbols'.
+        The 'symbols' attribute of the FinancialInstrumentsModule instance is then updated with the loaded symbols as a list.
+
+        In case of an error during loading, an exception is caught, and an error message is printed.
+        """
         try:
             # Load the Excel file into a pandas DataFrame
             df = pd.read_excel(file_path, sheet_name = 'Symbols')  # Load 'Symbols' sheet
