@@ -627,6 +627,15 @@ class FinancialInstrumentsModule(tk.Frame):
         self.plot_frame.pack()
 
     def show_date_entry(self):
+        """
+        Enable date entry widgets and display information about the selected financial instrument.
+
+        This method retrieves the selected financial instrument from the dropdown widget.
+        If a valid instrument is selected, it enables the 'start_date_cal' and 'end_date_cal' DateEntry widgets.
+        Additionally, it displays an information message indicating the selected instrument.
+
+        Note: The information message is displayed using the 'show_info_message' method.
+        """
         selected_instrument = self.instrument_var.get()
         if selected_instrument:
             self.start_date_cal.config(state = 'normal')
