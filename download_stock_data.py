@@ -541,6 +541,20 @@ class FinancialInstrumentsModule(tk.Frame):
             # You might want to handle errors loading the file here
 
     def create_widgets(self):
+        """
+        Create and arrange Tkinter widgets for the GUI.
+
+        This method initializes and arranges Tkinter widgets for the FinancialInstrumentsModule GUI.
+        It creates labels, dropdowns, date entry widgets, and buttons for selecting financial instruments,
+        choosing start and end dates, loading data, and triggering various plot actions.
+        The widgets are organized within the Tkinter Frame.
+
+        The 'instrument_var' attribute is created as a Tkinter StringVar and associated with a dropdown widget.
+        The 'start_date_cal' and 'end_date_cal' attributes are associated with Tkinter DateEntry widgets for date selection.
+        Action buttons for loading data, plotting candlestick charts, and plotting close price evolution are created.
+
+        Note: This method checks if widgets have already been created to avoid duplicating them.
+        """
         # Check if widgets have already been created
         if hasattr(self, 'instrument_var'):
             return
