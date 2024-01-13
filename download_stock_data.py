@@ -486,7 +486,14 @@ class StockMarketAnalysis:
 
 
 class FinancialInstrumentsModule(tk.Frame):
+    
     def __init__(self, master = None):
+        """
+        Initialize the FinancialInstrumentsModule class.
+
+        Args:
+        - master (tk.Tk, optional): The root Tkinter window. If not provided, a new window is created.
+        """
         super().__init__(master)
         self.master = master
         self.pack()
