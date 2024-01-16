@@ -680,6 +680,18 @@ class FinancialInstrumentsModule(tk.Frame):
             self.show_error_message(f"Error loading data: {str(e)}")
 
     def plot_candlestick(self):
+        """
+        Plot a candlestick chart for the selected financial instrument within the specified date range.
+
+        This method checks if both the start and end dates are available before attempting to create a new
+        StockMarketAnalysis instance and plot a candlestick chart using Matplotlib. The created figure is displayed
+        using the 'show_plot' method.
+
+        If successful, an information message is displayed indicating the creation of the candlestick plot.
+        In case of an error during plot creation, the 'show_error_message' method is called to display an error message.
+
+        If the start and end dates are not available, an error message is displayed prompting the user to load data first.
+        """
         if self.start_date is not None and self.end_date is not None:
             selected_instrument = self.instrument_var.get()
             try:
