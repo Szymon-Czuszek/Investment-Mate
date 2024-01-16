@@ -643,6 +643,18 @@ class FinancialInstrumentsModule(tk.Frame):
             self.show_info_message(f"Selected instrument: {selected_instrument}")
 
     def load_data(self):
+        """
+        Load financial data for the selected instrument within the specified date range.
+
+        This method retrieves the selected financial instrument, start date, and end date from the respective widgets.
+        It attempts to create or update an instance of the StockMarketAnalysis class with the selected instrument and date range.
+        If the StockMarketAnalysis instance doesn't exist, a new instance is created. If it already exists, the instance is updated.
+
+        The 'show_info_message' method is called to display a success message upon successful data loading.
+        In case of an error during data loading, the 'show_error_message' method is called to display an error message.
+
+        Note: The start and end dates are retrieved using the 'get_date' method of the DateEntry widgets.
+        """
         selected_instrument = self.instrument_var.get()
         self.start_date = self.start_date_cal.get_date()
         self.end_date = self.end_date_cal.get_date()
