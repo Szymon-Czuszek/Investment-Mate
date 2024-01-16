@@ -710,6 +710,18 @@ class FinancialInstrumentsModule(tk.Frame):
             self.show_error_message("Please load data first.")
 
     def plot_close_evolution(self):
+        """
+        Plot the evolution of close prices for the selected financial instrument within the specified date range.
+
+        This method checks if both the start and end dates are available before attempting to create a new
+        StockMarketAnalysis instance and plot the evolution of close prices using Matplotlib. The created figure is displayed
+        using the 'show_plot' method.
+
+        If successful, an information message is displayed indicating the creation of the close evolution plot.
+        In case of an error during plot creation, the 'show_error_message' method is called to display an error message.
+
+        If the start and end dates are not available, an error message is displayed prompting the user to load data first.
+        """
         if self.start_date is not None and self.end_date is not None:
             selected_instrument = self.instrument_var.get()
             try:
