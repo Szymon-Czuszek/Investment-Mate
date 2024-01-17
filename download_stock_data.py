@@ -760,6 +760,14 @@ class FinancialInstrumentsModule(tk.Frame):
         canvas.get_tk_widget().pack(side = tk.TOP, fill = tk.BOTH, expand = 1)
 
     def show_info_message(self, message):
+        """
+        Display an information message using Tkinter messagebox.
+
+        This method takes a message as input and displays it as an information message using Tkinter's 'showinfo' method.
+
+        Args:
+        - message (str): The information message to be displayed.
+        """
         tk.messagebox.showinfo("Info", message)
 
     def show_error_message(self, message):
