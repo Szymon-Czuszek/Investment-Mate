@@ -771,6 +771,14 @@ class FinancialInstrumentsModule(tk.Frame):
         tk.messagebox.showinfo("Info", message)
 
     def show_error_message(self, message):
+        """
+        Display an error message using Tkinter messagebox.
+
+        This method takes an error message as input and displays it as an error message using Tkinter's 'showerror' method.
+
+        Args:
+        - message (str): The error message to be displayed.
+        """
         tk.messagebox.showerror("Error", message)
 
 
