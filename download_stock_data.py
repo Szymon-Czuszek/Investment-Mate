@@ -740,6 +740,18 @@ class FinancialInstrumentsModule(tk.Frame):
             self.show_error_message("Please load data first.")
 
     def show_plot(self, figure):
+        """
+        Display a Matplotlib figure within the Tkinter plot frame.
+
+        This method takes a Matplotlib figure as input and displays it within the Tkinter plot frame.
+        It first clears any existing widgets within the plot frame. Then, it creates a new Tkinter canvas
+        embedded with the provided figure and packs it into the plot frame.
+
+        Args:
+        - figure (matplotlib.figure.Figure): The Matplotlib figure to be displayed.
+
+        Note: The Matplotlib figure should be created using 'plt.subplots' or an equivalent method.
+        """
         for widget in self.plot_frame.winfo_children():
             widget.destroy()
 
