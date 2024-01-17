@@ -486,6 +486,34 @@ class StockMarketAnalysis:
 
 
 class FinancialInstrumentsModule(tk.Frame):
+    """
+    Tkinter-based GUI module for financial instruments analysis.
+
+    This class represents a Tkinter frame containing various widgets for analyzing financial instruments.
+    It includes functionalities for loading financial data, plotting candlestick charts, plotting close price evolution,
+    and displaying information or error messages. The class utilizes the StockMarketAnalysis class for handling financial data.
+
+    Attributes:
+    - master: The Tkinter master widget.
+    - analysis: An instance of the StockMarketAnalysis class for financial data analysis.
+    - symbols (list): A list to store financial instrument symbols.
+    - start_date: The selected start date for data analysis.
+    - end_date: The selected end date for data analysis.
+    - start_date_cal: Tkinter DateEntry widget for selecting the start date.
+    - end_date_cal: Tkinter DateEntry widget for selecting the end date.
+    - plot_frame: Tkinter frame for displaying Matplotlib plots.
+
+    Methods:
+    - load_symbols_from_file(file_path): Load financial instrument symbols from an Excel file.
+    - create_widgets(): Create and configure Tkinter widgets for the GUI.
+    - show_date_entry(): Enable date entry widgets and display information about the selected financial instrument.
+    - load_data(): Load financial data for the selected instrument within the specified date range.
+    - plot_candlestick(): Plot a candlestick chart for the selected financial instrument within the specified date range.
+    - plot_close_evolution(): Plot the evolution of close prices for the selected financial instrument within the specified date range.
+    - show_plot(figure): Display a Matplotlib figure within the Tkinter plot frame.
+    - show_info_message(message): Display an information message using Tkinter messagebox.
+    - show_error_message(message): Display an error message using Tkinter messagebox.
+    """
     
     def __init__(self, master = None):
         """
