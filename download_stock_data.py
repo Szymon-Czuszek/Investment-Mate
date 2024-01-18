@@ -906,6 +906,19 @@ class DownloadStockDataModule(tk.Frame):
             self.file_path_entry.insert(0, file_path)
 
     def download_data(self):
+        """
+        Download stock data for the specified ticker and date range to a CSV file.
+
+        This method retrieves the ticker, start date, end date, and file path from the corresponding entry widgets.
+        It then attempts to download stock data using the Yahoo Finance API within the specified date range.
+        The downloaded data is saved to a CSV file at the specified file path.
+
+        The method handles specific exceptions for TickerError (failed download) and general exceptions.
+        If the download is successful, it displays an information message; otherwise, it shows an error message.
+
+        Note:
+        - The ticker is converted to uppercase for consistency.
+        """
         ticker = self.ticker_entry.get().upper()
         start_date = self.start_date_cal.get_date()
         end_date = self.end_date_cal.get_date()
