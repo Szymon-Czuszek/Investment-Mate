@@ -58,6 +58,7 @@ class StockMarketAnalysis:
     - plot_volume_distribution(self, ax=None): Plot the distribution of trading volume per weekday.
     - plot_combined_graph(self, plot_type="both"): Plot a combination of candlestick, close price, and volume graphs.
     """
+    
     def __init__(self, name, symbols, start, end):
         """
         Initialize the StockMarketAnalysis class with data from Yahoo Finance.
@@ -816,7 +817,23 @@ class FinancialInstrumentsModule(tk.Frame):
 
 
 class DownloadStockDataModule(tk.Frame):
+    
     def __init__(self, master = None):
+        """
+        Initialize the DownloadStockDataModule class.
+
+        This method sets up the GUI components for downloading stock data. It creates and configures Tkinter labels,
+        entry widgets, date entry widgets, and buttons for specifying the ticker, date range, file path, and initiating
+        the data download process.
+
+        Args:
+        - master: The Tkinter master widget.
+
+        Note:
+        - The default file path is set to the current working directory with the file name "ISZ.csv".
+        - The 'browse_file_path' method is bound to the 'Browse' button.
+        - The 'download_data' method is bound to the 'Download Data' button.
+        """
         super().__init__(master)
         self.master = master
         self.pack()
