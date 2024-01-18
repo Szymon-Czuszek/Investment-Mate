@@ -947,6 +947,21 @@ class DownloadStockDataModule(tk.Frame):
             self.show_error_message(error_message)
 
     def save_data_to_csv(self, data, file_path, ticker):
+        """
+        Save stock data to a CSV file, handling existing files and appending data.
+
+        This method checks if the specified CSV file already exists. If the file exists, it reads the existing data,
+        checks for the presence of the 'Source' column, and either adds the column and saves the updated data or appends
+        the new data with the 'Source' column. If the file does not exist, it directly saves the data to the specified file.
+
+        Parameters:
+        - data (pd.DataFrame): The stock data to be saved.
+        - file_path (str): The path to the CSV file.
+        - ticker (str): The ticker symbol representing the data source.
+
+        Note:
+        - The 'Source' column is added or updated to identify the source of the data.
+        """
         # Check if the file exists
         if os.path.exists(file_path):
             existing_data = pd.read_csv(file_path)
