@@ -890,6 +890,16 @@ class DownloadStockDataModule(tk.Frame):
         self.download_button.pack(pady = 10)
 
     def browse_file_path(self):
+        """
+        Open a file dialog to browse and select a destination file path.
+
+        This method activates a file dialog to allow the user to browse and select a destination file path for
+        downloading stock data. If a file path is selected, it updates the corresponding entry widget with the selected path.
+
+        Note:
+        - The file dialog is configured to default to a CSV file with the extension ".csv".
+        - If a file path is selected, the entry widget is updated with the selected path.
+        """
         file_path = filedialog.asksaveasfilename(defaultextension=".csv", filetypes=[("CSV files", "*.csv")])
         if file_path:
             self.file_path_entry.delete(0, tk.END)
