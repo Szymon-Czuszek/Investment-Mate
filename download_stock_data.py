@@ -1028,7 +1028,14 @@ class DownloadStockDataModule(tk.Frame):
 
 
 class ComparativeAnalysisModule:
+
     def __init__(self, master):
+        """
+        Initialize the ComparativeAnalysisModule.
+
+        Parameters:
+        - master: The master window in which the module will be created.
+        """
         self.master = master
         self.create_widgets()
 
