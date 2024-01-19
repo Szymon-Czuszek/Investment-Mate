@@ -817,6 +817,20 @@ class FinancialInstrumentsModule(tk.Frame):
 
 
 class DownloadStockDataModule(tk.Frame):
+    """
+    GUI module for downloading stock data using Yahoo Finance API.
+
+    This class represents a tkinter Frame designed for downloading stock data. It includes entry widgets for entering
+    the stock ticker, start and end dates, specifying the file path, and buttons for browsing and initiating the download.
+
+    Methods:
+    - __init__(self, master=None): Initializes the GUI elements within the frame.
+    - browse_file_path(self): Opens a file dialog to browse and set the file path for saving the downloaded data.
+    - download_data(self): Downloads stock data based on user input and saves it to the specified CSV file.
+    - save_data_to_csv(self, data, file_path, ticker): Saves stock data to a CSV file, handling existing files.
+    - show_info_message(self, message): Displays an information message box.
+    - show_error_message(self, message): Displays an error message box.
+    """
     
     def __init__(self, master = None):
         """
