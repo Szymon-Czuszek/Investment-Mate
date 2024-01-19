@@ -986,6 +986,14 @@ class DownloadStockDataModule(tk.Frame):
             data.to_csv(file_path, index = False)
 
     def show_info_message(self, message):
+        """
+        Display an information message box.
+
+        This method creates and displays an information message box with the specified message.
+
+        Parameters:
+        - message (str): The message to be displayed in the information message box.
+        """
         tk.messagebox.showinfo("Info", message)
 
     def show_error_message(self, message):
