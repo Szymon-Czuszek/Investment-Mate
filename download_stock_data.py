@@ -997,6 +997,14 @@ class DownloadStockDataModule(tk.Frame):
         tk.messagebox.showinfo("Info", message)
 
     def show_error_message(self, message):
+        """
+        Display an error message box.
+
+        This method creates and displays an error message box with the specified message.
+
+        Parameters:
+        - message (str): The message to be displayed in the error message box.
+        """
         tk.messagebox.showerror("Error", message)
 
 
