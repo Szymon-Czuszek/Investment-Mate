@@ -1028,7 +1028,25 @@ class DownloadStockDataModule(tk.Frame):
 
 
 class ComparativeAnalysisModule:
+    """
+    A class for conducting comparative analysis of closing prices for two stock tickers.
 
+    This class provides a GUI interface for the user to input start and end dates, along with two stock tickers.
+    It utilizes the yfinance library to download historical stock data for the specified tickers within the given date range.
+    The class then plots the closing prices of both tickers on a logarithmic scale, allowing for visual comparison.
+
+    Attributes:
+    - master: The master widget that serves as the parent of this module.
+
+    Methods:
+    - __init__(self, master): Initializes the ComparativeAnalysisModule instance.
+
+    - create_widgets(self): Creates and arranges the widgets for entering date ranges and stock tickers.
+
+    - plot_data(self): Plots the comparative analysis of closing prices for the specified stock tickers within the given date range.
+      Utilizes yfinance for data retrieval and Matplotlib for plotting.
+    """
+    
     def __init__(self, master):
         """
         Initialize the ComparativeAnalysisModule.
