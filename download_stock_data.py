@@ -1140,6 +1140,17 @@ class ComparativeAnalysisModule:
                         )
 
     def plot_data(self):
+         """
+        Plot comparative analysis of closing prices for two stock tickers.
+
+        Retrieves stock tickers, start and end dates from corresponding widgets. Downloads historical stock data
+        for the specified tickers within the given date range using yfinance. Plots the closing prices of both
+        tickers on a logarithmic scale with different colors.
+
+        Raises:
+        - yfinance.TickerError: If there is an issue with downloading data for the specified ticker(s).
+        - Exception: For other unexpected errors during the data download and plotting process.
+        """
         ticker1 = self.ticker1_entry.get()
         ticker2 = self.ticker2_entry.get()
         start_date = self.start_date_entry.get_date().strftime("%Y-%m-%d")
