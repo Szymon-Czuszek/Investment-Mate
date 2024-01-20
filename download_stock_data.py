@@ -1204,6 +1204,29 @@ class ComparativeAnalysisModule:
 
 
 class StockPortfolioAnalysis(tk.Frame):
+    """
+    A class for analyzing a stock portfolio and displaying relevant information and plots.
+
+    This class loads portfolio data from an Excel file, preprocesses the data, calculates profit/loss for each ticker,
+    identifies open and closed positions, displays portfolio summary information, and plots the stock prices of all tickers
+    within the portfolio using the Matplotlib library.
+
+    Attributes:
+    - master: The master widget that serves as the parent of this module.
+
+    Methods:
+    - __init__(self, master=None): Initializes the StockPortfolioAnalysis instance, loads data, preprocesses it,
+      calculates profit/loss, shows portfolio summary, and plots all tickers.
+
+    - process_duplicated_tickers(self): Processes duplicated tickers by sorting the data and creating a 'Dup' column.
+
+    - calculate_profit_loss(self): Calculates profit/loss for each ticker by fetching historical data from Yahoo Finance.
+
+    - show_portfolio_info(self): Displays profit/loss and position status for each ticker in the portfolio.
+
+    - plot_all_tickers(self): Plots the stock prices of all tickers within the portfolio using Matplotlib.
+    """
+    
     def __init__(self, master = None):
         super().__init__(master)
         self.master = master
