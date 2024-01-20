@@ -1040,6 +1040,20 @@ class ComparativeAnalysisModule:
         self.create_widgets()
 
     def create_widgets(self):
+        """
+        Create widgets for the comparative analysis module.
+
+        This method creates and configures DateEntry widgets for start and end dates, Entry widgets for entering
+        stock tickers, and a Button to trigger data download and plot. It packs the widgets onto the grid within the
+        master window.
+
+        Widgets:
+        - Start Date Entry (DateEntry): Widget for selecting the start date.
+        - End Date Entry (DateEntry): Widget for selecting the end date.
+        - Ticker 1 Entry (Entry): Widget for entering the first stock ticker.
+        - Ticker 2 Entry (Entry): Widget for entering the second stock ticker.
+        - Plot Button (Button): Button for triggering data download and plot.
+        """
         # DateEntry widgets for start and end dates
         start_date_label = tk.Label(self.master,
                                     text = "Start Date:"
