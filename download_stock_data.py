@@ -1304,6 +1304,16 @@ class StockPortfolioAnalysis(tk.Frame):
         self.data['Dup'] = self.data['Dup'].cumsum()
 
     def calculate_profit_loss(self):
+        """
+        Calculates profit or loss for each ticker in the portfolio.
+
+        The method performs the following tasks:
+        1. Iterates over each row in the portfolio data.
+        2. Fetches historical stock data from Yahoo Finance for the specified ticker, start date, and end date.
+        3. Calculates the profit or loss as the difference between the closing prices at the start and end dates.
+        4. Assigns the calculated profits to the 'Profit/Loss' column in the dataframe.
+        5. Identifies open and closed positions in the 'Position' column based on the end date.
+        """
         # Calculate profit/loss for each ticker
         profits = []
         for index, row in self.data.iterrows():
