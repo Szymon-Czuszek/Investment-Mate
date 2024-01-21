@@ -1246,6 +1246,25 @@ class StockPortfolioAnalysis(tk.Frame):
     """
     
     def __init__(self, master = None):
+        """
+        Initializes the StockPortfolioAnalysis instance, loads portfolio data, preprocesses it, calculates profit/loss,
+        shows portfolio summary, and plots all tickers.
+
+        Parameters:
+        - master: The master widget that serves as the parent of this module.
+
+        This constructor performs the following tasks:
+        1. Calls the constructor of the parent class (tk.Frame) with the specified master widget.
+        2. Packs the frame within the parent widget.
+        3. Loads portfolio data from an Excel file ('ISZ.xlsm') into a Pandas DataFrame.
+        4. Preprocesses the data by filling blank end dates with today's date.
+        5. Processes duplicated tickers, indicating sell and buy back transactions.
+        6. Calculates profit/loss for each ticker by fetching historical data from Yahoo Finance.
+        7. Displays profit/loss and position status for each ticker in the portfolio.
+        8. Plots the stock prices of all tickers within the portfolio using Matplotlib.
+
+        Note: The path to the Excel file and sheet name are assumed to be 'ISZ.xlsm' and 'Portfolio', respectively.
+        """
         super().__init__(master)
         self.master = master
         self.pack()
