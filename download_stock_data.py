@@ -1341,6 +1341,13 @@ class StockPortfolioAnalysis(tk.Frame):
         self.data.loc[self.data['End Date'] == date.today(), 'Position'] = 'Open'
 
     def show_portfolio_info(self):
+        """
+        Displays the profit/loss and position status summary for each ticker in the portfolio.
+
+        The method creates a Tkinter label widget and displays the portfolio summary, including ticker symbols,
+        profit or loss, and position status (open or closed). The summary is formatted as a string and set as the text
+        content of the label.
+        """
         # Display profit/loss and position status on the app
         label_text = f"Portfolio Summary:\n{self.data[['Ticker', 'Profit/Loss', 'Position']].to_string(index = False)}"
         label = tk.Label(self.master, text = label_text)
