@@ -1288,6 +1288,14 @@ class StockPortfolioAnalysis(tk.Frame):
         self.plot_all_tickers()
 
     def process_duplicated_tickers(self):
+        """
+        Processes duplicated tickers in the portfolio data.
+
+        The method performs the following tasks:
+        1. Sorts the portfolio data by 'Ticker' and 'Start Date'.
+        2. Identifies duplicated tickers using the Pandas `duplicated` method.
+        3. Assigns a cumulative sum to the 'Dup' column to distinguish between different instances of duplicated tickers.
+        """
         # Sort data by Ticker and Start Date
         self.data = self.data.sort_values(by = ['Ticker', 'Start Date'])
 
