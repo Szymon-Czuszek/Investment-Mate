@@ -1403,6 +1403,12 @@ class PortfolioAnalyzer:
     """
     
     def __init__(self, file_path):
+        """
+        Initializes the PortfolioAnalyzer with portfolio data from the specified Excel file.
+
+        Parameters:
+        - file_path (str): The file path of the Excel file containing portfolio data.
+        """
         self.data = pd.read_excel(file_path, sheet_name = 'Portfolio')
 
     def download_data(self):
