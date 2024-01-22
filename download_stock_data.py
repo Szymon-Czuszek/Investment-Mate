@@ -1388,6 +1388,20 @@ class StockPortfolioAnalysis(tk.Frame):
 
 
 class PortfolioAnalyzer:
+    """
+    A class for analyzing and plotting stock portfolio data.
+
+    Parameters:
+    - file_path (str): The file path of the Excel file containing portfolio data.
+
+    Example:
+    ```
+    analyzer = PortfolioAnalyzer(file_path = 'portfolio_data.xlsx')
+    stock_data = analyzer.download_data()
+    analyzer.plot_stock_data(stock_data)
+    ```
+    """
+    
     def __init__(self, file_path):
         self.data = pd.read_excel(file_path, sheet_name = 'Portfolio')
 
