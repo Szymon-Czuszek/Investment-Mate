@@ -1354,6 +1354,14 @@ class StockPortfolioAnalysis(tk.Frame):
         label.pack()
 
     def plot_all_tickers(self):
+        """
+        Plots the stock prices of all tickers in the portfolio using Matplotlib.
+
+        The method utilizes a PortfolioAnalyzer to download historical stock data for each ticker,
+        and then creates a Matplotlib figure to visualize the closing prices. The closing prices are
+        plotted on the y-axis against the corresponding dates on the x-axis. Gaps in the data are masked
+        for a cleaner visualization.
+        """
         analyzer = PortfolioAnalyzer(self.data)
         stock_data = analyzer.download_data()
         fig, ax = plt.subplots(figsize = (10, 6))
