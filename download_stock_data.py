@@ -1412,6 +1412,18 @@ class PortfolioAnalyzer:
         self.data = pd.read_excel(file_path, sheet_name = 'Portfolio')
 
     def download_data(self):
+        """
+        Downloads historical stock data for each ticker in the portfolio.
+
+        Returns:
+        dict: A dictionary containing historical stock data for each ticker.
+
+        Example:
+        ```
+        analyzer = PortfolioAnalyzer(file_path = 'portfolio_data.xlsx')
+        stock_data = analyzer.download_data()
+        ```
+        """
         unique_tickers = self.data['Ticker'].unique()
         stock_data = {}
         
