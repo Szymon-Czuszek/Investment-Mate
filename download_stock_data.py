@@ -1462,6 +1462,19 @@ class PortfolioAnalyzer:
         return overall_stock_data
     
     def plot_stock_data(self, stock_data):
+        """
+        Plots the historical stock prices for each ticker in the portfolio.
+
+        Parameters:
+        - stock_data (dict): A dictionary containing historical stock data for each ticker.
+
+        Example:
+        ```
+        analyzer = PortfolioAnalyzer(file_path = 'portfolio_data.xlsx')
+        stock_data = analyzer.download_data()
+        analyzer.plot_stock_data(stock_data)
+        ```
+        """
         plt.figure(figsize = (10, 6))
         plt.title('Portfolio Stock Prices')
         plt.xlabel('Date')
