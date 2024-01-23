@@ -1524,6 +1524,15 @@ class MainMenu(tk.Tk):
     """
     
     def __init__(self):
+        """
+        Initializes the main application window for the Financial Analysis App.
+
+        Example:
+        ```
+        main_app = MainMenu()
+        main_app.mainloop()
+        ```
+        """
         super().__init__()
 
         self.title("Financial Analysis App")
