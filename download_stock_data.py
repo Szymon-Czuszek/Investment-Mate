@@ -1563,6 +1563,18 @@ class MainMenu(tk.Tk):
                               )
 
     def open_module(self, module_name):
+        """
+        Opens a new module in the notebook.
+
+        Parameters:
+        - module_name (str): The name of the module to be opened.
+
+        Example:
+        ```
+        main_app = MainMenu()
+        main_app.open_module("Preview Data Module")
+        ```
+        """
         for i in range(self.notebook.index("end")):
             if self.notebook.tab(i, "text") == module_name:
                 return
