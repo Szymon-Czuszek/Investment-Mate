@@ -1598,6 +1598,29 @@ class MainMenu(tk.Tk):
 
 
 class DownloadStockDataModule(tk.Frame):
+    """
+    The main application window for the Financial Analysis App.
+
+    Example:
+    ```
+    main_app = MainMenu()
+    main_app.mainloop()
+    ```
+
+    Attributes:
+    - notebook (ttk.Notebook): A notebook widget for storing different modules.
+    - modules (dict): A dictionary to store instances of opened modules.
+
+    Methods:
+    - open_module(module_name): Opens a new module in the notebook.
+
+    Example:
+    ```
+    main_app = MainMenu()
+    main_app.open_module("Preview Data Module")
+    ```
+    """
+    
     def __init__(self, master = None):
         super().__init__(master)
         self.master = master
