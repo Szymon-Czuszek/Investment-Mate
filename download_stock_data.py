@@ -1599,25 +1599,37 @@ class MainMenu(tk.Tk):
 
 class DownloadStockDataModule(tk.Frame):
     """
-    The main application window for the Financial Analysis App.
+    A module for downloading stock data and saving it to a CSV file.
 
     Example:
     ```
-    main_app = MainMenu()
-    main_app.mainloop()
+    download_module = DownloadStockDataModule()
+    download_module.mainloop()
     ```
 
     Attributes:
-    - notebook (ttk.Notebook): A notebook widget for storing different modules.
-    - modules (dict): A dictionary to store instances of opened modules.
+    - ticker_label (tk.Label): Label for entering the stock ticker.
+    - ticker_entry (tk.Entry): Entry widget for entering the stock ticker.
+    - start_date_label (tk.Label): Label for selecting the start date.
+    - start_date_cal (DateEntry): DateEntry widget for selecting the start date.
+    - end_date_label (tk.Label): Label for selecting the end date.
+    - end_date_cal (DateEntry): DateEntry widget for selecting the end date.
+    - file_path_label (tk.Label): Label for entering the file path.
+    - file_path_entry (tk.Entry): Entry widget for entering the file path.
+    - browse_button (tk.Button): Button for browsing and selecting the file path.
+    - download_button (tk.Button): Button for initiating the data download.
 
     Methods:
-    - open_module(module_name): Opens a new module in the notebook.
+    - browse_file_path(): Opens a file dialog for browsing and selecting the file path.
+    - download_data(): Downloads stock data based on user input and saves it to a CSV file.
+    - save_data_to_csv(data, file_path, ticker): Saves stock data to a CSV file.
+    - show_info_message(message): Displays an information message.
+    - show_error_message(message): Displays an error message.
 
     Example:
     ```
-    main_app = MainMenu()
-    main_app.open_module("Preview Data Module")
+    download_module = DownloadStockDataModule()
+    download_module.download_data()
     ```
     """
     
