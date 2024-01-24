@@ -1635,12 +1635,12 @@ class DownloadStockDataModule(tk.Frame):
     
     def __init__(self, master = None):
         """
-        Initializes the main application window for the Financial Analysis App.
+        Initializes the DownloadStockDataModule.
 
         Example:
         ```
-        main_app = MainMenu()
-        main_app.mainloop()
+        download_module = DownloadStockDataModule()
+        download_module.mainloop()
         ```
         """
         super().__init__(master)
