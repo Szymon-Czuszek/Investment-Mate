@@ -1751,6 +1751,21 @@ class DownloadStockDataModule(tk.Frame):
             self.show_error_message(error_message)
 
     def save_data_to_csv(self, data, file_path, ticker):
+        """
+        Saves stock data to a CSV file.
+
+        Parameters:
+        - data (pd.DataFrame): DataFrame containing stock data.
+        - file_path (str): File path for saving the data.
+        - ticker (str): Stock ticker.
+
+        Example:
+        ```
+        download_module = DownloadStockDataModule()
+        data = pd.DataFrame(...)  # Sample stock data
+        download_module.save_data_to_csv(data, 'path/to/file.csv', 'AAPL')
+        ```
+        """
         # Check if the file exists
         if os.path.exists(file_path):
             existing_data = pd.read_csv(file_path)
