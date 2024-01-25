@@ -1787,6 +1787,18 @@ class DownloadStockDataModule(tk.Frame):
             data.to_csv(file_path, index = False)
 
     def show_info_message(self, message):
+        """
+        Displays an information message.
+
+        Parameters:
+        - message (str): Information message to be displayed.
+
+        Example:
+        ```
+        download_module = DownloadStockDataModule()
+        download_module.show_info_message("Data downloaded successfully.")
+        ```
+        """
         tk.messagebox.showinfo("Info", message)
 
     def show_error_message(self, message):
