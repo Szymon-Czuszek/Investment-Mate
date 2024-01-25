@@ -1714,6 +1714,15 @@ class DownloadStockDataModule(tk.Frame):
             self.file_path_entry.insert(0, file_path)
 
     def download_data(self):
+        """
+        Downloads stock data based on user input and saves it to a CSV file.
+
+        Example:
+        ```
+        download_module = DownloadStockDataModule()
+        download_module.download_data()
+        ```
+        """
         ticker = self.ticker_entry.get().upper()
         start_date = self.start_date_cal.get_date()
         end_date = self.end_date_cal.get_date()
