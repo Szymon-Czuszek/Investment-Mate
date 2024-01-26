@@ -1802,6 +1802,18 @@ class DownloadStockDataModule(tk.Frame):
         tk.messagebox.showinfo("Info", message)
 
     def show_error_message(self, message):
+        """
+        Displays an error message.
+
+        Parameters:
+        - message (str): Error message to be displayed.
+
+        Example:
+        ```
+        download_module = DownloadStockDataModule()
+        download_module.show_error_message("Error downloading data.")
+        ```
+        """
         tk.messagebox.showerror("Error", message)
 
 
