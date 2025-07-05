@@ -12,7 +12,7 @@ analysis = StockMarketAnalysis("AAPL", "Apple Inc.", "2022-01-01", "2022-12-31")
 analysis.plot_candlestick_chart()
 ```
 
-**Comparative Analysis:** Easily compare two stocks using logarithmic scale charts, aiding in volatility assessment and trend identification.
+**⚖️ Comparative Analysis:** Easily compare two stocks using logarithmic scale charts, aiding in volatility assessment and trend identification.
 
 ```python
 # Example code snippet for comparative analysis
