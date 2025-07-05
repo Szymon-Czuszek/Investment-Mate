@@ -4,7 +4,7 @@ Investment Mate is a powerful investment analysis tool designed to enhance decis
 
 ## 🔍 Key Features
 
-**Stock Analysis Modules:** Conduct detailed analyses of individual stocks, utilizing candlestick and high-low-close charts for comprehensive insights into stock volatility.
+**📈 Stock Analysis Modules:** Conduct detailed analyses of individual stocks, utilizing candlestick and high-low-close charts for comprehensive insights into stock volatility.
 
 ```python
 # Example code snippet for stock analysis
