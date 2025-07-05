@@ -2,7 +2,7 @@
 
 Investment Mate is a powerful investment analysis tool designed to enhance decision-making processes for traders and investors. This comprehensive suite of functionalities focuses on stock analysis, portfolio management, and data visualization, with a primary emphasis on European, S&P 500, and Polish markets.
 
-## Key Features
+## 🔍 Key Features
 
 **Stock Analysis Modules:** Conduct detailed analyses of individual stocks, utilizing candlestick and high-low-close charts for comprehensive insights into stock volatility.
 
