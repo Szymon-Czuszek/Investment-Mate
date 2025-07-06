@@ -20,7 +20,7 @@ comparative_module = ComparativeAnalysisModule(master)
 comparative_module.create_widgets()
 ```
 
-**Portfolio Summary:** Effectively manage investment portfolios, summarizing profits/losses for each position through an Excel-based data management system.
+**💼 Portfolio Summary:** Effectively manage investment portfolios, summarizing profits/losses for each position through an Excel-based data management system.
 
 ```python
 # Example code snippet for portfolio summary
