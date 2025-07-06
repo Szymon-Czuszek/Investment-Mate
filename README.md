@@ -36,7 +36,7 @@ download_module = DownloadStockDataModule(master)
 download_module.download_data()
 ```
 
-## Project Goals
+## 🎯 Project Goals
 
 **Efficient Analysis:** Simplify and accelerate the analysis of stock prices and portfolio performance for better decision-making.
 
