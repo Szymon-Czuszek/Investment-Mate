@@ -46,7 +46,7 @@ download_module.download_data()
 
 **Continual Improvement:** Foster ongoing development for expanded functionalities and an enhanced user experience.
 
-## Future Roadmap
+## 🛣️ Future Roadmap
 
 **Expanded Data Sources:** Integrate with additional financial data platforms to enable more extensive market analysis.
 
