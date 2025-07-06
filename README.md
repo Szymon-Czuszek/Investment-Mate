@@ -28,7 +28,7 @@ portfolio_analyzer = StockPortfolioAnalysis(master)
 portfolio_analyzer.show_portfolio_info()
 ```
 
-**Data Retrieval:** Seamlessly retrieve market data by specifying date ranges and stock tickers, generating CSV files for Excel integration.
+**📥 Data Retrieval:** Seamlessly retrieve market data by specifying date ranges and stock tickers, generating CSV files for Excel integration.
 
 ```python
 # Example code snippet for data retrieval
