@@ -58,6 +58,6 @@ download_module.download_data()
 
 Contributions, suggestions, and feedback are highly encouraged to further refine and improve Investment Mate, making it an indispensable tool for investors and traders.
 
-## Get Started
+## 🚀 Get Started
 
 Explore the repository, contribute to its development, or leverage its capabilities to bolster your investment strategies!
