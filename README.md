@@ -48,7 +48,7 @@ download_module.download_data()
 
 ## 🛣️ Future Roadmap
 
-**Expanded Data Sources:** Integrate with additional financial data platforms to enable more extensive market analysis.
+**🌍 Expanded Data Sources:** Integrate with additional financial data platforms to enable more extensive market analysis.
 
 **Diversified Instrument Support:** Extend functionality to analyze various financial instruments beyond stocks.
 
