@@ -50,7 +50,7 @@ download_module.download_data()
 
 **🌍 Expanded Data Sources:** Integrate with additional financial data platforms to enable more extensive market analysis.
 
-**Diversified Instrument Support:** Extend functionality to analyze various financial instruments beyond stocks.
+**📊 Diversified Instrument Support:** Extend functionality to analyze various financial instruments beyond stocks.
 
 **Automated Data Updates:** Optimize the data update process for real-time or scheduled updates.
 
