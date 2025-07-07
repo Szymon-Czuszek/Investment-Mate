@@ -54,7 +54,7 @@ download_module.download_data()
 
 **Automated Data Updates:** Optimize the data update process for real-time or scheduled updates.
 
-## Contribution
+## 🤝 Contribution
 
 Contributions, suggestions, and feedback are highly encouraged to further refine and improve Investment Mate, making it an indispensable tool for investors and traders.
 
