@@ -44,7 +44,7 @@ download_module.download_data()
 
 **Data Accessibility:** Ensure easy access to updated market information for informed investment decisions.
 
-**Continual Improvement:** Foster ongoing development for expanded functionalities and an enhanced user experience.
+**🔄 Continual Improvement:** Foster ongoing development for expanded functionalities and an enhanced user experience.
 
 ## 🛣️ Future Roadmap
 
