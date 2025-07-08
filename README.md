@@ -52,7 +52,7 @@ download_module.download_data()
 
 **📊 Diversified Instrument Support:** Extend functionality to analyze various financial instruments beyond stocks.
 
-**Automated Data Updates:** Optimize the data update process for real-time or scheduled updates.
+**⏱️ Automated Data Updates:** Optimize the data update process for real-time or scheduled updates.
 
 ## 🤝 Contribution
 
