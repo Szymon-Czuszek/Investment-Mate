@@ -40,7 +40,7 @@ download_module.download_data()
 
 **Efficient Analysis:** Simplify and accelerate the analysis of stock prices and portfolio performance for better decision-making.
 
-**User-Friendly Interface:** Provide an intuitive and user-friendly platform for comprehensive data visualization and analysis.
+**🧠 User-Friendly Interface:** Provide an intuitive and user-friendly platform for comprehensive data visualization and analysis.
 
 **🌐 Data Accessibility:** Ensure easy access to updated market information for informed investment decisions.
 
