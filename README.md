@@ -38,7 +38,7 @@ download_module.download_data()
 
 ## 🎯 Project Goals
 
-**Efficient Analysis:** Simplify and accelerate the analysis of stock prices and portfolio performance for better decision-making.
+**⚡ Efficient Analysis:** Simplify and accelerate the analysis of stock prices and portfolio performance for better decision-making.
 
 **🧠 User-Friendly Interface:** Provide an intuitive and user-friendly platform for comprehensive data visualization and analysis.
 
