@@ -42,7 +42,7 @@ download_module.download_data()
 
 **User-Friendly Interface:** Provide an intuitive and user-friendly platform for comprehensive data visualization and analysis.
 
-**Data Accessibility:** Ensure easy access to updated market information for informed investment decisions.
+**🌐 Data Accessibility:** Ensure easy access to updated market information for informed investment decisions.
 
 **🔄 Continual Improvement:** Foster ongoing development for expanded functionalities and an enhanced user experience.
 
